@@ -3,17 +3,47 @@ body{
     padding: 0;
 }
 
-.flex{
-    display: flex;
-    background-color: #31213c;
+#home{
     width: 100vw;
     height: 100vh;
+}
+
+.flex{
+    height: inherit;
+    width: inherit;
+    display: flex;
+    background-color: #31213c;
     color: white;
-    font-size: 2rem;
-    font-family: Calibri;
+    font-size: 3rem;
+    font-family: Lucida Sans Regular;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+.nav{
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    background-color: #2a1c35;
+    justify-content: center;
+    align-items: center;
+}
+
+.pageLink{
+    display: inherit;
+    width: 80%;
+    height: inherit;
+    align-items: center;
+}
+
+.link{
+    color: #ffffff;
+    font-family: Lucida Sans Regular;
+    font-size: 1.6rem;
+    margin: 5px 10px 5px 10px;
+    padding: 5px 10px 5px 10px;
+    cursor: pointer;
 }
 
 .text{
