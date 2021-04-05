@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.flex{
+    display: flex;
+    background-color: #31213c;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    font-size: 2rem;
+    font-family: Calibri;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text{
+}
+
+.heading{
+    color: #faed25;
+}
