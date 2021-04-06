@@ -1,21 +1,60 @@
-body{
+html{
+    scroll-behavior: smooth;
+}
+
+html,body{
     margin: 0;
     padding: 0;
 }
 
 #home{
+    display: flex;
     width: 100vw;
     height: 100vh;
+    color: white;
+    font-size: 3rem;
+    background-color: #31213c;
+    font-family: Lucida Sans Regular;
+}
+
+#about{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container{
+    display: inherit;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content:flex-start;
+    align-items: flex-start;
+    height: 80%;
+    width: 80%;
+}
+
+.about{
+    color: #31213c;
+    font-size: 3rem;
+    font-family: Lucida Sans Regular;
+}
+
+.image{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 10% 0 0 10%
 }
 
 .flex{
     height: inherit;
     width: inherit;
     display: flex;
-    background-color: #31213c;
-    color: white;
-    font-size: 3rem;
-    font-family: Lucida Sans Regular;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -24,7 +63,7 @@ body{
 .nav{
     display: flex;
     width: 100vw;
-    height: 60px;
+    height: 80px;
     background-color: #2a1c35;
     justify-content: center;
     align-items: center;
@@ -40,13 +79,25 @@ body{
 .link{
     color: #ffffff;
     font-family: Lucida Sans Regular;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     margin: 5px 10px 5px 10px;
     padding: 5px 10px 5px 10px;
     cursor: pointer;
 }
 
-.text{
+.link:hover{
+    color: #faed25;
+    transition-duration: 500ms;
+    transition-timing-function: ease-in-out;
+}
+
+.link:active,a.focus{
+    color: #faed25;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
 }
 
 .heading{
