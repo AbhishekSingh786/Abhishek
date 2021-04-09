@@ -30,7 +30,31 @@ html,body{
     font-family: Lucida Sans Regular;
 }
 
+.button{
+    display: inherit;
+    margin: 5% 0 5% 0;
+}
+
+button{
+    cursor: pointer;
+    height: 8vh;
+    width: 26vh;
+    font-size: 1.8rem;
+    color: white;
+    background-color:inherit;
+    font-family: Lucida Sans Regular;
+    border: 3px solid white ;
+    padding: 4% 4% 4% 4%;
+}
+
+button:hover{
+    background-color: #2a1c35;
+}
+
 /* NAVBAR */
+i{
+filter: invert(100%);
+}
 
 .nav{
     display: flex;
@@ -108,6 +132,10 @@ a{
     font-family: Lucida Sans Regular;
     font-size: 1.8rem;
     margin: 5px 0 5px 10px;
+}
+
+.movlink:hover{
+    color: #faed25;
 }
 
 /* ABOUT */
@@ -255,15 +283,15 @@ a{
 
 @media screen and (max-width: 1500px ) {
     #card{
-        height: 75%;
-        width: 75%;
+        height: 98%;
+        width: 98%;
     }
 }
 
 @media screen and (max-width: 1260px ) {
     #card{
-        height: 60%;
-        width: 60%;
+        height: 95%;
+        width: 95%;
     }
 }
 
@@ -296,6 +324,8 @@ a{
     .nav{
         justify-content: flex-end;
         align-items: center;
+        z-index: 1;
+        height: 40px;
     }
     .ham{
         display: flex;
@@ -308,12 +338,17 @@ a{
         flex-direction: column;
     }
     #card{
-        height: 400px;
-        width: 400px;
+        height: 300px;
+        width: 300px;
         margin: 5px 0 5px 0;
+        z-index: 0;
     }
     #projects{
-        height: 160vh;
+        margin-top: 8rem;
+        height: 150vh;
+    }
+    .mov{
+        display: flex;
     }
 }
 
