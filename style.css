@@ -90,10 +90,6 @@ filter: invert(100%);
     transition-timing-function: ease-in-out;
 }
 
-.link:active,a.focus{
-    color: #faed25;
-}
-
 a{
     text-decoration: none;
     color: inherit;
@@ -297,7 +293,7 @@ a{
   height: 4px;
   margin-bottom: 5px;
   position: relative;
-  
+  background-color: lemonchiffon;
   background: #2a1c35;
   border-radius: 3px;
   
