@@ -30,19 +30,46 @@
             <div class="link"><a href="#projects">Projects</a></div>
             <div class="link"><a href="#contact">Contact</a></div>
         </div>
-        <div class="ham">
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="large material-icons">dehaze</i>
-            </a>
-        </div>
     </nav>
-    <div class="mov" >
-            <div class="movlink"><a href="#home" class="focus">Home</a></div>
-            <div class="movlink"><a href="#about">About</a></div>
-            <div class="movlink"><a href="#projects">Projects</a></div>
-            <div class="movlink"><a href="#contact">Contact</a></div>
+
+<!-- CHANGED  -->
+<div class="ham">
+
+    <nav role="navigation">
+        <div id="menuToggle">
+          <!--
+          A fake / hidden checkbox is used as click reciever,
+          so you can use the :checked selector on it.
+          -->
+          <input type="checkbox" />
+          
+          <!--
+          Some spans to act as a hamburger.
+          
+          They are acting like a real hamburger,
+          not that McDonalds stuff.
+          -->
+          <span></span>
+          <span></span>
+          <span></span>
+          
+          <!--
+          Too bad the menu has to be inside of the button
+          but hey, it's pure CSS magic.
+          -->
+          <ul id="menu">
+            <a href="#home"><li>Home</li></a>
+            <a href="#about"><li>About</li></a>
+            <a href="#projects"><li>Projects</li></a>
+            <a href="#contact"><li>Contact</li></a>
+          </ul>
         </div>
-    <!-- ABOUT -->
+      </nav>
+
+</div>
+    
+
+      <!-- ABOUT -->
     <section id="about">
         <div class="about">
             ABOUT
