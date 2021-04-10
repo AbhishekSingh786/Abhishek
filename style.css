@@ -37,8 +37,8 @@ html,body{
 
 button{
     cursor: pointer;
-    height: 8vh;
-    width: 26vh;
+    height: 100%;
+    width: 15vw;
     font-size: 1.8rem;
     color: white;
     background-color:inherit;
@@ -148,6 +148,7 @@ a{
     align-items: center;
     flex-direction: column;
     background-color: rgb(240, 240, 240);
+    z-index: 0;
 }
 
 .projects{
@@ -155,62 +156,8 @@ a{
     font-size: 3rem;
     font-weight: bolder;
     margin-top: 5rem;
+    
     font-family: Lucida Sans Regular;
-}
-
-.card{
-    margin-top: 2rem;
-    display: inherit;
-    height: 60%;
-    width: 80vw;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-}
-
-#card{
-    height: 500px;
-    width: 500px;
-}
-
-.card1 img{
-	-webkit-filter: grayscale(0) blur(0);
-	filter: grayscale(0) blur(0);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-    cursor: pointer;
-}
-
-.card1:hover img {
-	-webkit-filter: grayscale(100%) blur(4px);
-	filter: grayscale(100%) blur(4px);
-}
-
-
-.card2 img{
-	-webkit-filter: grayscale(0) blur(0);
-	filter: grayscale(0) blur(0);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-    cursor: pointer;
-}
-
-.card2:hover img {
-	-webkit-filter: grayscale(100%) blur(4px);
-	filter: grayscale(100%) blur(4px);
-}
-
-.card3 img{
-	-webkit-filter: grayscale(0) blur(0);
-	filter: grayscale(0) blur(0);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-    cursor: pointer;
-}
-
-.card3:hover img {
-	-webkit-filter: grayscale(100%) blur(4px);
-	filter: grayscale(100%) blur(4px);
 }
 
 .heading{
@@ -401,9 +348,12 @@ a{
     #intro{
         font-size: 1.2rem;
     }
+    button{
+        font-size: 1.4rem;
+    }
 }
 
-@media screen and (max-width: 860px ) {
+@media screen and (max-width: 900px ) {
     .container{
         justify-content: center;
         align-items: center;
@@ -428,23 +378,11 @@ a{
         cursor: pointer;
         margin-right: 5%;
     }
-    .card{
-        justify-content: flex-start;
-        align-items: center;
-        flex-direction: column;
-    }
-    #card{
-        height: 300px;
-        width: 300px;
-        margin: 5px 0 5px 0;
-        z-index: 0;
-    }
-    #projects{
-        margin-top: 8rem;
-        height: 150vh;
-    }
     #menuToggle{
         display: block;
+    }
+    button{
+        font-size: 1.1rem;
     }
 }
 
@@ -454,6 +392,9 @@ a{
     }
     #intro{
         font-size: 1rem;
+    }
+    button{
+        font-size: 0.8rem;
     }
 }
 
