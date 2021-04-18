@@ -90,9 +90,55 @@ filter: invert(100%);
     transition-timing-function: ease-in-out;
 }
 
+.link:active,a.focus{
+    color: #faed25;
+}
+
 a{
     text-decoration: none;
     color: inherit;
+}
+
+.ham{
+    display: none;
+    height: inherit;
+    width: 100px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line{
+    background-color: rgb(255, 255, 255);
+    height: 5px;
+    width: 60%;
+    margin: 10% 0 10% 0;
+    border-radius: 25px;
+}
+
+#mov{
+    position:sticky;
+    top: 40px;
+    display: none;
+    z-index: 1;
+    height: 200px;
+    width: 100vw;
+    background-color: rgb(180, 180, 180);
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.movlink{
+    color:  #2a1c35;
+    font-family: Lucida Sans Regular;
+    font-size: 1.8rem;
+    margin: 5px 0 5px 10px;
+}
+
+.movlink:hover{
+    color: wheat;
 }
 
 /* ABOUT */
@@ -148,7 +194,6 @@ a{
     align-items: center;
     flex-direction: column;
     background-color: rgb(240, 240, 240);
-    z-index: 0;
 }
 
 .projects{
@@ -156,8 +201,62 @@ a{
     font-size: 3rem;
     font-weight: bolder;
     margin-top: 5rem;
-    
     font-family: Lucida Sans Regular;
+}
+
+.card{
+    margin-top: 2rem;
+    display: inherit;
+    height: 60%;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#card{
+    height: 500px;
+    width: 500px;
+}
+
+.card1 img{
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.card1:hover img {
+	-webkit-filter: grayscale(100%) blur(4px);
+	filter: grayscale(100%) blur(4px);
+}
+
+
+.card2 img{
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.card2:hover img {
+	-webkit-filter: grayscale(100%) blur(4px);
+	filter: grayscale(100%) blur(4px);
+}
+
+.card3 img{
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.card3:hover img {
+	-webkit-filter: grayscale(100%) blur(4px);
+	filter: grayscale(100%) blur(4px);
 }
 
 .heading{
@@ -183,164 +282,36 @@ a{
     margin: 0 10px;
 }
 
-.ham{
+/* #my-div {
+    background-color: rgba(255, 193, 78, 0.712);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 100px;
+    right: 50px;
+}
+a.fill-div {
     display: flex;
-    position: sticky;
-    bottom: 0;
-    top: 0;
-}
-
-#menuToggle
-{
-    display: none;
-    position: relative;
-    top: 50px;
-    left: 50px;
-    z-index: 1;
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-#menuToggle a
-{
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
     text-decoration: none;
-    color: #232323;
-}
-
-#menuToggle a:hover
-{
-  color: #1c142e;
-}
-
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  left: -5px;
-  
-  cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 2; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background-color: lemonchiffon;
-  background: #2a1c35;
-  border-radius: 3px;
-  
-  z-index: 1;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
-  width: 88vw;
-  margin: -75px 0 0 -50px;
-  padding: 50px;
-  padding-top: 100px;
-  font-family: Lucida Sans Regular;
-  background: #ededed;
-  list-style-type: none;
-  
-  /* to stop flickering of text in safari */
-  
-  transform-origin: 0% 0%;
-  transform: translate(-100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 10px 0;
-  font-size: 2rem;
-}
-
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: none;
-}
-
+} */
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1500px ) {
     #card{
-        height: 98%;
-        width: 98%;
+        height: 450px;
+        width: 450px;
     }
 }
 
 @media screen and (max-width: 1260px ) {
     #card{
-        height: 95%;
-        width: 95%;
+        height: 350px;
+        width: 350px;
     }
 }
 
@@ -367,19 +338,39 @@ a{
         width: 200px;
         margin: 0;
     }
+    .pageLink{
+        display: none;
+    }
     .projects{
         margin-top: 2rem;
     }
     .nav{
-       display: none;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 1;
+        height: 40px;
     }
     .ham{
         display: flex;
         cursor: pointer;
         margin-right: 5%;
     }
-    #menuToggle{
-        display: block;
+    .card{
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+    }
+    #card{
+        height: 250px;
+        width: 250px;
+        margin: 5px 0 5px 0;
+        z-index: 0;
+    }
+    #projects{
+        height: 100vh;
+    }
+    #mov{
+        display: flex;
     }
     button{
         font-size: 1.1rem;
