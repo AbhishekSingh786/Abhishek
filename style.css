@@ -210,7 +210,7 @@ a{
     color: #31213c;
     font-size: 3rem;
     font-weight: bolder;
-    margin-top: 4rem;
+    margin-top: 5rem;
     margin-bottom: 4rem;
     font-family: Lucida Sans Regular;
 }
@@ -432,5 +432,13 @@ a.fill-div {
     }
     #intro{
         font-size: 1rem;
+    }
+}
+@media screen and (max-width: 560px ) {
+    #projects{
+        height: 320vh;
+    }
+    #about{
+        height: 110vh;
     }
 }
