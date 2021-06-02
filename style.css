@@ -37,18 +37,20 @@ html,body{
 
 button{
     cursor: pointer;
-    height: 100%;
-    width: 15vw;
+    height: 150%;
+    width: 16vw;
     font-size: 1.8rem;
     color: white;
     background-color:inherit;
     font-family: Lucida Sans Regular;
-    border: 3px solid white ;
+    border: 2px solid white ;
     padding: 4% 4% 4% 4%;
 }
 
 button:hover{
     background-color: #2a1c35;
+    color: #faec25de;
+    border-color: #faed25de;
 }
 
 /* NAVBAR */
@@ -355,6 +357,8 @@ a.fill-div {
     }
     button{
         font-size: 1.4rem;
+        width: 20vw;
+        height: 150%;
     }
 }
 
@@ -401,13 +405,15 @@ a.fill-div {
         z-index: 0;
     }
     #projects{
-        height: 220vh;
+        height: 240vh;
     }
     #mov{
-        display: flex;
+        display: none;
     }
     button{
-        font-size: 1.1rem;
+        font-size: 1.3rem;
+        width: 20vw;
+        height: 150%;
     }
     #text1{
         display: none;
@@ -422,7 +428,12 @@ a.fill-div {
         font-size: 1rem;
     }
     button{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+        width: 20vw;
+        height: 150%;
+    }
+    #projects{
+        height: 300vh;
     }
 }
 
@@ -433,10 +444,11 @@ a.fill-div {
     #intro{
         font-size: 1rem;
     }
+    
 }
 @media screen and (max-width: 560px ) {
     #projects{
-        height: 320vh;
+        height: 300vh;
     }
     #about{
         height: 110vh;
