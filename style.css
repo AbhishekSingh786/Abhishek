@@ -57,6 +57,7 @@ filter: invert(100%);
 }
 
 .nav{
+    z-index: 3;
     display: flex;
     position: sticky;
     bottom: 0;
@@ -123,7 +124,7 @@ a{
     z-index: 1;
     height: 200px;
     width: 100vw;
-    background-color: rgb(180, 180, 180);
+    background-color: #31213c;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
@@ -131,7 +132,7 @@ a{
 }
 
 .movlink{
-    color:  #2a1c35;
+    color:rgb(180, 140, 70);  
     font-family: Lucida Sans Regular;
     font-size: 1.8rem;
     margin: 5px 0 5px 10px;
@@ -190,22 +191,31 @@ a{
 #projects{
     display: flex;
     width: 100vw;
-    height: 90vh;
+    height: 240vh;
     align-items: center;
     flex-direction: column;
     background-color: rgb(240, 240, 240);
+}
+
+.title1{
+    display: inherit;
+    align-items: flex-start;
+    flex-direction: row;
+    font-size: 2rem;
+    font-family: Lucida Sans Regular;
+    margin-bottom: 0px;
 }
 
 .projects{
     color: #31213c;
     font-size: 3rem;
     font-weight: bolder;
-    margin-top: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     font-family: Lucida Sans Regular;
 }
 
 .card{
-    margin-top: 2rem;
     display: inherit;
     height: 60%;
     width: 80vw;
@@ -215,8 +225,26 @@ a{
 }
 
 #card{
+    margin-right: 50px;
+    margin-left: 50px;
     height: 500px;
     width: 500px;
+}
+
+#text1{
+    margin-top: 0px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-family: Lucida Sans Regular;
+    font-size: 1.2rem;
+    background-color: rgb(230, 230, 230);
+    width: inherit;
+    height: 50px;
+
+}
+
+img{
+    z-index: 0;
 }
 
 .card1 img{
@@ -306,12 +334,18 @@ a.fill-div {
         height: 450px;
         width: 450px;
     }
+    #text1{
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 1260px ) {
     #card{
         height: 350px;
         width: 350px;
+    }
+    #text1{
+        font-size: 0.9rem;
     }
 }
 
@@ -347,7 +381,7 @@ a.fill-div {
     .nav{
         justify-content: flex-end;
         align-items: center;
-        z-index: 1;
+        z-index: 2;
         height: 40px;
     }
     .ham{
@@ -361,19 +395,22 @@ a.fill-div {
         flex-direction: column;
     }
     #card{
-        height: 250px;
-        width: 250px;
-        margin: 5px 0 5px 0;
+        height: 260px;
+        width: 260px;
+        margin: 50px 0px 50px 0px;
         z-index: 0;
     }
     #projects{
-        height: 100vh;
+        height: 220vh;
     }
     #mov{
         display: flex;
     }
     button{
         font-size: 1.1rem;
+    }
+    #text1{
+        display: none;
     }
 }
 
